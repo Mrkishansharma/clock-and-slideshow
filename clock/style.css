@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(48, 36, 36);
+}
+.clock > div{
+    font-size: 10rem;
+    padding: 30px;
+    margin: 60px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(239, 228, 228, 0.24) 0px 3px 8px;
+}
+span{
+    font-size: 9.5rem;
+    color: white;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CLOCK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock">
+        <div id="hours">13</div>
+        <span>:</span>
+        <div id="minutes">13</div>
+        <span>:</span>
+        <div id="seconds">13</div>
+    </div>
+</body>
+<script>
+    let hours = document.getElementById("hours");
+    let minutes = document.getElementById("minutes");
+    let seconds = document.getElementById("seconds");
+    setInterval(function(){
+        let date = new Date();
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        hours.innerHTML = hr;
+        minutes.innerHTML = min;
+        seconds.innerHTML = sec;
+    },1000)
+</script>
+</html>
